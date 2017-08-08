@@ -81,9 +81,9 @@ module.exports = function (grunt) {
           "lib/serialize-html.js",
           "lib/text-pieces-to-inserts.js",
           "lib/headless.js",
-          "lib/firepad.js"
+          "lib/socketpad.js"
         ],
-        "dest": "dist/firepad.js"
+        "dest": "dist/socketpad.js"
       }
     },
     uglify: {
