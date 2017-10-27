@@ -50,9 +50,9 @@ module.exports = function (grunt) {
             '  if (typeof module != \'undefined\' && module.exports) module.exports = definition();',
             '  else if (typeof context[\'define\'] == \'function\' && context[\'define\'][\'amd\']) define(definition);',
             '  else context[name] = definition();',
-            '})(\'Firepad\', function () {'
+            '})(\'Socketpad\', function () {'
           ].join('\n'),
-          footer: "\nreturn firepad.Firepad; }, this);"
+          footer: "\nreturn firepad.Socketpad; }, this);"
         },
         "src": [
           "lib/utils.js",
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
           "lib/text-operation.js",
           "lib/annotation-list.js",
           "lib/cursor.js",
-          "lib/firebase-adapter.js",
+          "lib/socket-adapter.js",
           "lib/rich-text-toolbar.js",
           "lib/wrapped-operation.js",
           "lib/undo-manager.js",
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
           "lib/headless.js",
           "lib/socketpad.js"
         ],
-        "dest": "dist/socketpad.js"
+        "dest": "/Users/tim.carroll/repo/documentation-manager/client/src/external/socketpad.js"
       }
     },
     uglify: {
