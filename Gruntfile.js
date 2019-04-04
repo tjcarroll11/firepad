@@ -67,7 +67,7 @@ module.exports = function (grunt) {
           "lib/undo-manager.js",
           "lib/client.js",
           "lib/editor-client.js",
-          "lib/ace-adapter.js",
+          // "lib/ace-adapter.js",
           "lib/constants.js",
           "lib/entity-manager.js",
           "lib/entity.js",
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
           "lib/parse-html.js",
           "lib/serialize-html.js",
           "lib/text-pieces-to-inserts.js",
-          "lib/headless.js",
+          // "lib/headless.js",
           "lib/socketpad.js"
         ],
         "dest": "/Users/tim.carroll/repo/documentation-manager/client/src/external/socketpad.js"
