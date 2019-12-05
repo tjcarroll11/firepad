@@ -44,15 +44,9 @@ module.exports = function (grunt) {
             ' * License: MIT',
             ' * Copyright: 2014 Firebase',
             ' * With code from ot.js (Copyright 2012-2013 Tim Baumann)',
-            ' */\n',
-            '(function (name, definition, context) {',
-            '  //try CommonJS, then AMD (require.js), then use global.',
-            '  if (typeof module != \'undefined\' && module.exports) module.exports = definition();',
-            '  else if (typeof context[\'define\'] == \'function\' && context[\'define\'][\'amd\']) define(definition);',
-            '  else context[name] = definition();',
-            '})(\'Socketpad\', function () {'
+            ' */\n'
           ].join('\n'),
-          footer: "\nreturn firepad.Socketpad; }, this);"
+          footer: "export default firepad.Socketpad;"
         },
         "src": [
           "lib/utils.js",
@@ -83,7 +77,7 @@ module.exports = function (grunt) {
           // "lib/headless.js",
           "lib/socketpad.js"
         ],
-        "dest": "/Users/tim.carroll/repo/documentation-manager/client/src/external/socketpad.js"
+        "dest": "/Users/tim.carroll/repo/documentation-manager/lib/client/src/external/socketpad.js"
       }
     },
     uglify: {
